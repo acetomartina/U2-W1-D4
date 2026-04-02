@@ -1,0 +1,52 @@
+body {
+  background-color: #969696;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article > div {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article > div > p {
+  margin: 0;
+}
+
+.TRANSLATE {
+  background-color: orange;
+  transform: translate(10px, 10px);
+}
+/* sposta le cose*
+/* la proprietà TRANSLATE accetta due valori: positivi (gli elementi andranno verso destra/alto in base all'asse)
+e negativo (basso/sinistra) */
+/* se ne voglio spostare solo uno (asse x o y) uso translateX o translate Y */
+
+.ROTATE {
+  background-color: aquamarine;
+  transform: rotate(65deg);
+}
+/* ruota gli elementi in deg (unità di misura). Valori positivi x: destra, positivi y: basso. */
+
+.SCALE {
+  background-color: chartreuse;
+  /* transform: scale(0.5); /*valori inferiori ad 1 diminuiamo in SCALA*/
+  transform: scale(1.1); /*ingrandiamo in SCALA*/
+}
+/* ingrandisce/diminuisce elemento in SCALA*/
+/*nelle parentesi possiamo anche dare due valori (uno per x, uno per y) */
+
+.SKEW {
+  background-color: blueviolet;
+  transform: skew(10deg, 10deg);
+}
+/* DEFORMA l'elemento in GRADI (come se lo acchiappassimo dagli angoli) */
+
+.MULTI {
+  background-color: rosybrown;
+  transform: translate(10px, 10px) rotate(30deg);
+}
+/* per applicare più metodi di transform basterà scriverli sulla stessa riga lasciando uno spazio tra di essi */

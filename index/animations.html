@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations in CSS</title>
+    <link rel="stylesheet" href="./css/animations.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Le ANIMAZIONI in CSS</h1>
+    </header>
+    <main>
+      <p>
+        Permette di animare elementi HTML. Non per forza all'hover ma anche
+        all'avvio della pagina, bottoni etc.
+      </p>
+      <article>
+        <h1>Box che si MUOVE ALL'AVVIO DELLA PAGINA</h1>
+        <div class="box flex move">
+          <p>
+            MI MUOVO <br />
+            DA SOLO <br />
+          </p>
+        </div>
+      </article>
+      <article>
+        <h1>Box che si MUOVE ALLA PRESSIONE DI UN BOTTONE</h1>
+        <button onclick="handRotate()">RUOTO</button>
+        <div class="box flex navy">
+          <div class="box flex navy">
+            <p>
+              MI MUOVO <br />
+              DA SOLO <br />
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="./script/animations.js"></script>
+  </body>
+</html>

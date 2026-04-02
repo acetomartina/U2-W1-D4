@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@keyframes comparsa {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+#container {
+  padding: 2em 0em 2em 0em;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  margin-top: 20em;
+}
+
+#top {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article h2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 2em;
+}
+article p {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#container article {
+  animation: comparsa 0.6s linear;
+  justify-content: space-evenly;
+  gap: -80px;
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: comparsa 30s linear 10s;
+}
+#container article:hover {
+  transform: scale(1.5);
+  z-index: 999;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.post-it1 {
+  background-color: rgba(228, 213, 237, 0.923);
+  transform: rotate(5deg) translate(50px, 50px);
+}
+
+.post-it2 {
+  background-color: rgb(238, 236, 205);
+  transform: rotate(5deg) translate(-25px, 40px);
+}
+
+.post-it3 {
+  background-color: rgb(178, 231, 188);
+  transform: rotate(-5deg);
+}
+
+.post-it4 {
+  background-color: rgb(232, 217, 190);
+  transform: rotate(15deg) translate(-50px, 30px);
+}
+
+.post-it5 {
+  background-color: rgba(228, 213, 237, 0.923);
+  transform: rotate(-15deg) translate(-50px, -10px);
+}
+
+.post-it6 {
+  background-color: rgb(232, 217, 190);
+  transform: rotate(-5deg) translate(-50px, -5px);
+}

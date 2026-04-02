@@ -1,0 +1,52 @@
+body {
+  background-color: #909090;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* sto creando l'animazione. La dobbiamo dichiarare prima di chiamarla */
+/*@keyframes mi fa creare l'animazione
+/*fuori dalle graffe il nome */
+/*all'interno delle graffe definiamo cosa succede in QUALSIASI momento */
+@keyframes box-moving {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+.move {
+  background-color: firebrick;
+  /* animation: NOME ANIMAZIONE; DURATA; CURVA; RITARDO; RIPETIZIONI; STILI CONCLUSIVI;*/
+  animation: box-moving 4s linear 1s 2 backwards;
+}
+
+.navy {
+  background-color: navy;
+  color: white;
+}
+
+@keyframes boxrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.rotate {
+  animation: boxrotate 1s linear 0s infinite;
+}
